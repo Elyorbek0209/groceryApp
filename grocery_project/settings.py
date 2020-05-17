@@ -164,7 +164,7 @@ AUTHENTICATION_BACKENDS = (
 
 ACCOUNT_SESSION_REMEMBER = True # new
 
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend' # new
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend' # new
 
 ACCOUNT_SIGNUP_PASSWORD_ENTER_TWICE = False
 
@@ -173,4 +173,5 @@ ACCOUNT_AUTHENTICATION_METHOD = 'email' # new
 ACCOUNT_EMAIL_REQUIRED = True # new 
 ACCOUNT_UNIQUE_EMAIL = True # new
 
+DEFAULT_FROM_EMAIL = 'elyorbeksoliev@gmail.com'
 
